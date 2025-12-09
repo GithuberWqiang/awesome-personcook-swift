@@ -85,6 +85,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: VideoCell.reuseIdentifier, for: indexPath) as? VideoCell else {
             fatalError("无法创建 VideoCell")
+            
         }
 
         let video = videos[indexPath.row]
